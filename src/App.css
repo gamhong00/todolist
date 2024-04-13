@@ -98,3 +98,14 @@ h1 {
 .delete-icon {
   cursor: pointer;
 }
+
+/* Tùy chỉnh màu sắc của input */
+.react-datepicker__input-container input {
+  width: 100%;
+  padding: 0.5rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  color: #8758ff; /* Màu văn bản của input */
+  background-color: #fff; /* Màu nền của input */
+}

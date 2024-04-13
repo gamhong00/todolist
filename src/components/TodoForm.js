@@ -11,7 +11,7 @@ export const TodoForm = ({ addTodo }) => {
         e.preventDefault();
         if (value) {
             // add todo
-            addTodo(value,  date.toLocaleDateString());
+            addTodo(value, date.toLocaleDateString());
             // clear form after submission
             setValue('');
             setDate(new Date()); // Đặt lại ngày tháng năm về ngày hiện tại
@@ -20,7 +20,7 @@ export const TodoForm = ({ addTodo }) => {
     return (
         <form onSubmit={handleSubmit} className="TodoForm">
             <input type="text" value={value} onChange={(e) => setValue(e.target.value)} className="todo-input" placeholder='What is the task today?' />
-            <DatePicker className="date" selected={date}  onChange={date => setDate(date)} /> {/* Thêm DatePicker */}
+            <DatePicker className="date" selected={date} onChange={date => setDate(date)} dateFormat="dd/MM/yyyy" /> {/* Thêm DatePicker */}
             <button type="submit" className='todo-btn'>Add Task</button>
         </form>
     )

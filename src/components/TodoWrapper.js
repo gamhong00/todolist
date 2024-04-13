@@ -32,10 +32,10 @@ export const TodoWrapper = () => {
         );
     }
 
-    const editTask = (task, id) => {
+    const editTask = (task, id, date) => {
         setTodos(
             todos.map((todo) =>
-                todo.id === id ? { ...todo, task, isEditing: !todo.isEditing } : todo
+                todo.id === id ? { ...todo, task, isEditing: !todo.isEditing, date} : todo
             )
         );
     };

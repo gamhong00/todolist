@@ -1,6 +1,8 @@
 import React, { useState } from 'react'
+import DatePicker from 'react-datepicker';
+import 'react-datepicker/dist/react-datepicker.css';
 
-export const EditTodoForm = ({ editTodo, task, initialDate}) => {
+export const EditTodoForm = ({ editTodo, task, initialDate }) => {
     const [value, setValue] = useState(task.task);
     const [date, setDate] = useState(new Date(initialDate)); // Set ngày hiện tại từ prop
 
@@ -13,7 +15,7 @@ export const EditTodoForm = ({ editTodo, task, initialDate}) => {
     return (
         <form onSubmit={handleSubmit} className="TodoForm">
             <input type="text" value={value} onChange={(e) => setValue(e.target.value)} className="todo-input" placeholder='Update task' />
-            <input type="date" value={date.toISOString().substring(0,10)} onChange={(e) => setDate(new Date(e.target.value))} /> {/* Thêm input ngày */}
+            <DatePicker className="date" selected={date} onChange={date => setDate(date)} dateFormat="dd/MM/yyyy" /> {/* Thêm DatePicker */}
             <button type="submit" className='todo-btn'>Update Task</button>
         </form>
     )
