@@ -29,11 +29,15 @@ h1 {
   margin-top: 5rem;
   padding: 2rem;
   border-radius: 5px;
+  text-align: center; /* Căn giữa theo trục ngang */
 }
 
 .TodoForm {
   width: 100%;
   margin-bottom: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Căn giữa các phần tử con theo trục dọc */
 }
 
 .todo-input {
@@ -41,14 +45,19 @@ h1 {
   background: none;
   border: 1px solid #8758ff;
   padding: 0.5rem 1rem;
-  margin-top: 1rem;
-  margin-bottom: 2rem;
+  /* margin-top: 1rem;
+  margin-bottom: 2rem; */
   width: 300px;
   color: #fff;
 }
 
 .todo-input::placeholder {
   color: #ffffff4d;
+}
+
+.date{
+  width: 200px;
+  height: 39px;
 }
 
 .todo-btn {
