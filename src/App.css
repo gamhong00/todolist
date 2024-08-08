@@ -1,14 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 
 * {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
 body {
-  background: #8758ff;
+  /* background: #8758ff; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -25,7 +25,7 @@ h1 {
 }
 
 .TodoWrapper {
-  background: #1A1A40;
+  background: #1a1a40;
   margin-top: 5rem;
   padding: 2rem;
   border-radius: 5px;
@@ -43,7 +43,7 @@ h1 {
 .todo-input {
   outline: none;
   background: none;
-  border: 1px solid #8758ff;
+  border: 1px solid #32be3f;
   padding: 0.5rem 1rem;
   /* margin-top: 1rem;
   margin-bottom: 2rem; */
@@ -55,13 +55,13 @@ h1 {
   color: #ffffff4d;
 }
 
-.date{
+.date {
   width: 200px;
   height: 39px;
 }
 
 .todo-btn {
-  background: #8758ff;
+  background: #32be3f;
   color: #fff;
   border: none;
   padding: 0.55rem;
@@ -72,7 +72,7 @@ h1 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: #8758ff;
+  background: #32be3f;
   color: #fff;
   padding: 0.75rem 1rem;
   border-radius: 5px;
@@ -106,6 +106,6 @@ h1 {
   font-size: 1rem;
   border: 1px solid #ccc;
   border-radius: 4px;
-  color: #8758ff; /* Màu văn bản của input */
+  color: #32be3f; /* Màu văn bản của input */
   background-color: #fff; /* Màu nền của input */
 }
